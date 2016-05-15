@@ -3,7 +3,7 @@ My Tool does one thing, and one thing well.
 """
 from setuptools import find_packages, setup
 
-dependencies = ['click']
+dependencies = ['click','untangle','gitapi']
 
 setup(
     name='pom-version',
@@ -21,7 +21,7 @@ setup(
     install_requires=dependencies,
     entry_points={
         'console_scripts': [
-            'pom-version = pom-version.cli:main',
+            'pom-version = POMVersion.cli:main',
         ],
     },
     package_data={
